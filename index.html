@@ -13,6 +13,9 @@
 			src="https://kit.fontawesome.com/d521bbec8a.js"
 			crossorigin="anonymous"
 		></script>
+
+		<!-- Script -->
+		<script src="script.js" defer></script>
 	</head>
 	<body
 		class="bg-menu bg-cover bg-no-repeat w-screen min-h-screen flex items-center flex-col p-4 md:p-12"
@@ -29,14 +32,22 @@
 
 			<!-- Select Burger -->
 			<h2 class="text-lg font-semibold pt-4 pb-2">Choose Base Burger</h2>
-			<select class="select select-bordered w-full max-w-xs" required>
+			<select
+				class="select select-bordered w-full max-w-xs text-zinc-900"
+				required
+				id="burger"
+			>
 				<option>Non Vegetarian</option>
 				<option selected>Vegetarian</option>
 			</select>
 
 			<!-- Select Addon -->
 			<h2 class="text-lg font-semibold pt-4 pb-2">Choose Add On</h2>
-			<select class="select select-bordered w-full max-w-xs" required>
+			<select
+				class="select select-bordered w-full max-w-xs text-zinc-900"
+				required
+				id="addOn"
+			>
 				<option>Extra Cheese</option>
 				<option>Extra Chicken</option>
 				<option>Extra Bell Peppers</option>
@@ -46,9 +57,7 @@
 			</select>
 
 			<!-- Submit -->
-			<button
-				class="btn btn-sm bg-green-500 hover:bg-green-600 my-4 text-zinc-900 font-medium"
-			>
+			<button class="btn btn-sm btn-primary my-4 font-medium" id="order">
 				Place order
 			</button>
 		</main>
